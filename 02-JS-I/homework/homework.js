@@ -1,13 +1,13 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "hola";
+const nuevaString = "Hola";
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 2;
 
 // Crea una variable booleana:
-const nuevoBool = true;
+const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -35,7 +35,7 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return x + y
+  return x + y  
 }
 
 function resta(x, y) {
@@ -66,6 +66,11 @@ function sonIguales(x, y) {
     return false;
   }
 }
+
+// diferencias de los signos (=)
+// = es una asignavion de valor, variable //
+// == compara solo el valor "2"== 2 / return true, por solo compara el valor 2 //
+// === compara el valor y comprara el tipo de dato "2"=== 2 / return false, por que su valor es igual, pero su tipo de dato no //
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
@@ -117,11 +122,14 @@ function esPar(num) {
   }
 }
 
+// usando % (resto) podemo determinar si el numero es PAR //
+// ejemplo: numer 10 % 2 === 0 , por 10/2 es 5, y no existe otro numero extra //
+
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num %2!==0){
+  if (num %2===1){
     return true;
   } else{
     return false;
@@ -132,8 +140,13 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
+  // return num ** 2
+  // return num * num
   return Math.pow(num,2);
 }
+  // funcion Math.pow(num, 2) //
+  // Es primer parametro "num" es el numero que nosotros vamos a elevar //
+  // El segundo parametro "2" es cuantas veces lo quiero elevar //
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
@@ -152,18 +165,21 @@ function redondearNumero(num) {
   // Tu código:
   return Math.round(num)
 }
+  // .round significa redondear un numero, al entero mas proximo //
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
   return Math.ceil(num)
 }
+  // .ceil redondear hacia arriva //
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
   return Math.random(0.125)
 }
+  // .random  significa aleatorio, un numero al azar.
 
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
@@ -171,11 +187,13 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero>0){
-    return"Es positivo";
-  } else if(numero<0){
-    return"Es negativo";
-  } else{ 
-    return false;
+    return"Es positivo"
+  } 
+  else if(numero<0){
+    return"Es negativo"
+  } 
+  else{ 
+    return false
   }
 }
 
@@ -184,6 +202,7 @@ function agregarSimboloExclamacion(str) {
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
   return `${str}!`;
+  // return str + "!" // 
 }
 
 function combinarNombres(nombre, apellido) {
@@ -191,13 +210,14 @@ function combinarNombres(nombre, apellido) {
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
   return `${nombre} ${apellido}`;
+  // return nombre + " " + apellido //
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return `Hola${nombre}!`
+  return "Hola" + " " + nombre + "!"
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -217,8 +237,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-var area= (base * altura) /2;
-return area;
+  return base * altura / 2
 }
 
 
@@ -236,6 +255,11 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
+
+  // if (letra.length > 1){
+  //  return "Dato incorrecto"
+  //  }
+
   if (letra.length !==1) return "Dato incorrecto" 
   if (letra === "a"|| letra === "e" || letra === "i" || letra === "o" || letra === "u"){
     return "Es vocal"
@@ -243,6 +267,7 @@ function esVocal(letra){
     return "Dato incorrecto"
   }
 }
+  // los sig || son operadodes logicos or //
 
 
 
