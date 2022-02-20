@@ -85,7 +85,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  // return numero === 10 || numero === 5
+  // return numero === 10 || numero === 5 //
   if (numero === 10){
     return true
   }
