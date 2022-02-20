@@ -24,12 +24,12 @@ function operacionMatematica(n1, n2, cb) {
   return cb(n1, n2)
 }
 
-function sumarArray(numeros, cb) {
+function sumarArray(numeros, cb){
   // Suma todos los números enteros (int/integers) de un array ("numeros")
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  var suma = numeros.reduce(function (ac, ele) {
+  var suma = numeros.reduce(function (ac, ele){
     return ac + ele
   }, 0)
   cb(suma)
@@ -39,7 +39,7 @@ function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-  array.forEach(function (valor) {
+  array.forEach(function (valor){
     return cb(valor);
   })
 }
