@@ -165,21 +165,18 @@ function redondearNumero(num) {
   // Tu código:
   return Math.round(num)
 }
-  // .round significa redondear un numero, al entero mas proximo //
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
   return Math.ceil(num)
 }
-  // .ceil redondear hacia arriva //
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
   return Math.random(0.125)
 }
-  // .random  significa aleatorio, un numero al azar.
 
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
