@@ -76,7 +76,7 @@ text-align: center;
 }
 #elementodos{
     display: center;
-    align-self: center;
+    align-self: flex-end;
     justify-content: center;
     flex-direction: center;
 }
