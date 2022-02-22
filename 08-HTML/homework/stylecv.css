@@ -1,0 +1,15 @@
+h1{color: rgb(0, 0, 0);
+}
+h4{color:rgb(0, 0, 0); font-weight: bold;
+}
+.divClass{
+    padding: 50px;
+    border: 10px solid rgb(0, 0, 0); 
+}
+body{height: 800px;
+    background-image: url("ima.juan/SL_060521_43530_31.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; 
+}
